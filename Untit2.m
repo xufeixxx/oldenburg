@@ -1,21 +1,21 @@
-SEN = [0.5 0.3 0.2 0];
-POP = [0.3 0 0.4 0.3];
-AS = [907 908];
-aes = FindEdges(AS,OL_G);
-bestedge = 0;
-MAX = 0;
-aslen = length(AS);
-
-
-popas = 0;
-senas = 0;
-for as = AS
-    ta = PointerTable(PointerTable.EdgeId==as,:).Type;
-    for i = 1:length(ta)
-        popas = popas + POP(ta(i));
-        senas = senas + SEN(ta(i));
-    end
-end
+% SEN = [0.5 0.3 0.2 0];
+% POP = [0.3 0 0.4 0.3];
+% AS = [907 908];
+% aes = FindEdges(AS,OL_G);
+% bestedge = 0;
+% MAX = 0;
+% aslen = length(AS);
+% 
+% 
+% popas = 0;
+% senas = 0;
+% for as = AS
+%     ta = PointerTable(PointerTable.EdgeId==as,:).Type;
+%     for i = 1:length(ta)
+%         popas = popas + POP(ta(i));
+%         senas = senas + SEN(ta(i));
+%     end
+% end
     
 
 % for i = 1:length(aes)

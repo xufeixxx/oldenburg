@@ -13,3 +13,12 @@
 % PointerTable = table(type,edgeid,x,y,'VariableNames',{'Type','EdgeId','PointX','PointY'});
 
 % kk = randi([1,4],1000,1);
+
+
+AS = [2295,2296,3183];
+R = FindEdges(AS,OL_G);
+
+for i = 1:length(R)
+   ColorInEdge(R(i),OL_G,'g'); 
+end
+
